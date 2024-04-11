@@ -450,19 +450,7 @@ img {
   font-weight: 500;
   color: #747474;
 }
-.me-card .lianxi-list svg{
-  margin: 0 5px;
- 
-}
-.me-card .lianxi-list a svg path{
-  transition: .2s ease-in-out;
-}
-.me-card .lianxi-list a:hover svg path{
-  fill: var(--mainColor);
-}
-.me-card .lianxi-list a{
- display: inline-block;
-}
+
 .me-card .buttom-box .button{
   display: block;
   margin: 0 auto;
