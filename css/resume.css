@@ -70,54 +70,6 @@ h6{
     border-radius: 50%;
     border: 3px solid var(--mainColor);
 }
-.li3-box{
-  display: flex;
-  flex-wrap: wrap;
-}
-.li3-box>div{
-  flex: 0 0 50%;
-  position: relative;
-  /* margin-bottom: 10px; */
-}
-.li3-box>div::after{
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  content: '';
-  display: inline-block;
-  width: 5px;
-  height: 100%;
-  background-color: var(--headerCOlor);
-}
-
-.li3-box .carcontent{
-  min-height: 150px;
-  margin: 0 20px 20px;
-  padding: 30px;
-  box-sizing: content-box;
-  /* width: 80%; */
-  /* background-color: aqua; */
-} 
-.li3-box .li3box-pro{
-  position: relative;
-}
-.li3box-pro:hover .carprogress{
-  opacity: 1;
-}
-.li3-box .carprogress{
-  transition: all .2s ease-in-out;
-  position: absolute;
-  right: -6px;
-  z-index: 1;
-  top: 10px;
-  width: 18px;
-  height: 18px;
-  background-color: var(--headerCOlor);
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 5px solid var(--mainColor);
-  opacity: .5;
-}
 
 
  /* 手机*/
@@ -129,9 +81,6 @@ h6{
     display: block;
   }
   .li2-box ul{
-    display: block;
-  }
-  .li3-box{
     display: block;
   }
   .li2-box li{

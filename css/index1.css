@@ -223,6 +223,56 @@ svg {
   vertical-align: sub;
 }
 
+/* 第五个 */
+.li5-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.li5-box>div{
+  flex: 0 0 100%;
+  position: relative;
+  /* margin-bottom: 10px; */
+}
+.li5-box>div::after{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background-color: var(--headerCOlor);
+}
+
+.li5-box .carcontent{
+  min-height: 150px;
+  margin: 0 20px 20px;
+  padding: 30px;
+  box-sizing: content-box;
+  /* width: 80%; */
+  /* background-color: aqua; */
+} 
+.li5-box .li5box-pro{
+  position: relative;
+}
+.li5box-pro:hover .carprogress{
+  opacity: 1;
+}
+.li5-box .carprogress{
+  transition: all .2s ease-in-out;
+  position: absolute;
+  right: -6px;
+  z-index: 1;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--headerCOlor);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid var(--mainColor);
+  opacity: .5;
+}
+
 /* 第六个 */
 .content-li.li6 {}
 
@@ -350,6 +400,9 @@ svg {
         display: block;
       }
       .li6-box{
+        display: block;
+      }
+      .li5-box{
         display: block;
       }
       .li7-box{
