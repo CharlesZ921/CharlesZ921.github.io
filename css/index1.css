@@ -219,77 +219,8 @@
   height: 45px;
 }
 
-/* 第五 */
-.li5-box {
-  position: relative;
-  overflow: hidden;
-}
-
 svg {
   vertical-align: sub;
-}
-.li5-box .left,.li5-box .right{
-  transition: .3s ease;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  background-color: var(--headerCOlor);
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  z-index: 1;
-  color: white;
-  top: 10%;
-  opacity: 0;
-}
-
-.li5-box:hover .left{
-  transform: translateX(100%);
-  opacity: 1;
-  background-color: var(--mainColor);
-}
-.li5-box:hover .right {
-  transform: translateX(-100%);
-  opacity: 1;
-  background-color: var(--bagColor);
-}
-
-.li5-box .left {
-  right: 15%;
-}
-.li5-box .right {
-  left: 15%;
-}
-
-.li5box-ul {
-  min-width: 100%;
-  transition: transform 1s ease;
-  transform: translate3d(0px, 0px, 0px);
-  transition-duration: 1s;
-  /* min-height: 250px; */
-  /* background-color: aqua;
-    transition-duration: 0ms;
-    transform: translate3d(-0%, 10px, 10px); */
-}
-
-.li5box-car {
-  display: inline-block;
-  height: 300px;
-  box-sizing: border-box;
-  width: 680px;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.li5box-car>img {
-  width: 50px;
-  height: 50px;
-  border: solid 3px #FCFCFE;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
-
 }
 
 /* 第六个 */
@@ -423,8 +354,5 @@ svg {
       }
       .li7-box{
         display: block;
-      }
-      .li5box-car{
-        width:auto;
       }
     }
