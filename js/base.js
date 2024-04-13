@@ -26,18 +26,6 @@
     
     
     if (active && active == 'true') { //非第一次登录 且是开灯(白色)
-      $('#myRadio').removeClass('active')
-      $('.navigation').removeClass('active')
-
-      root.style.setProperty('--backColor', '#fff')
-      root.style.setProperty('--borderline', '#fff')
-      root.style.setProperty('--headerCOlor', '#fff')
-      root.style.setProperty('--headerhover', 'rgb(255, 255, 255,.8)')
-      root.style.setProperty('--headerFont', '#00283A' )
-      root.style.setProperty('--fontColor', '#fff' )
-      root.style.setProperty('--mainColor', '#ff8181' )
-      root.style.setProperty('--bagColor', '#f4f5f7')
-    } else { //第一次登录或是黑色时 默认变成黑色
       $('#myRadio').addClass('active')
       $('.navigation').addClass('active')
       
@@ -49,6 +37,18 @@
       root.style.setProperty('--fontColor', '#00283A' )
       root.style.setProperty('--mainColor', '#ff8181' )
       root.style.setProperty('--bagColor','#02162b' )
+    } else { //第一次登录或是黑色时 默认变成黑色
+      $('#myRadio').removeClass('active')
+      $('.navigation').removeClass('active')
+
+      root.style.setProperty('--backColor', '#fff')
+      root.style.setProperty('--borderline', '#fff')
+      root.style.setProperty('--headerCOlor', '#fff')
+      root.style.setProperty('--headerhover', 'rgb(255, 255, 255,.8)')
+      root.style.setProperty('--headerFont', '#00283A' )
+      root.style.setProperty('--fontColor', '#fff' )
+      root.style.setProperty('--mainColor', '#ff8181' )
+      root.style.setProperty('--bagColor', '#f4f5f7')
     }
   }
 
