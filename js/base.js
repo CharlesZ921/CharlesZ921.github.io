@@ -25,7 +25,7 @@
     var active = sessionStorage.getItem('wttandroid')
     
     
-    if (active && active == 'true') { //非第一次登录 且是开灯(白色)
+    if (!active || active != 'true') { //非第一次登录 且是开灯(白色)
       $('#myRadio').addClass('active')
       $('.navigation').addClass('active')
       
