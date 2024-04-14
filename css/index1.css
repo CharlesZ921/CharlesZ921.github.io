@@ -322,6 +322,10 @@ svg {
   margin-bottom: 5px;
 }
 
+.li5-box .center-text {
+  text-align: center; /* Centers text horizontally */
+}
+
 /* 第六个 */
 .content-li.li6 {}
 
