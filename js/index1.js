@@ -1,14 +1,13 @@
 (function () {
 
-
-  // //一段正则，匹配所有_min.的图片src属性
-	// var test = /_min\./
-	// //遍历所有的图片节点
-	// $("img").each(function(index,obj){	
-	// 	if(test.test($(this).attr("src"))){
-	// 		var reSrc = $(this).attr("src").replace(test,".");
-	// 		$(this).attr("src",reSrc)
-	// 	}		
-	// })
+  fetch('./text/about-me.txt')
+  .then(response => response.text())
+  .then(text => {
+      document.getElementById('about-me').innerHTML = text;
+  })
+  .catch(error => {
+      console.error('Error loading the text file:', error);
+      document.getElementById('about-me').innerHTML = 'Failed to load text.';
+  });
 
 })()

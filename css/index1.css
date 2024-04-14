@@ -253,9 +253,10 @@ svg {
 
 .li5-box li{
   text-align: left;
-  height: 30px;
+  height: 25px;
   line-height:  28px;
   position: relative;
+  display: list-item;
 }
 
 .li5-box li:after{
@@ -274,6 +275,10 @@ svg {
   margin-left: 35px;
 }
 
+.li5-box .project-bul-points li{
+  height: 20px;
+}
+
 .li5-box .project-bul-points li:after{
   position: absolute;
     top: 11px;
@@ -281,10 +286,15 @@ svg {
     border: 1px solid var(--mainColor);
 }
 
+.li5-box .skills{
+  text-align: right;
+}
+
 .li5-box .company-name-container {
   display: flex;
   justify-content: space-between; /* Aligns children to each side of the container */
   align-items: center; /* Centers items vertically */
+  margin-top: 5px;
 }
 
 .li5-box .icon-and-content {
