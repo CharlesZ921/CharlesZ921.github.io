@@ -275,12 +275,26 @@ svg {
 }
 
 .li5-box ul {
-  list-style-type: disc; /* Other options include 'disc', 'square', 'none', etc. */
-  margin-left: 20px;
+  margin-left: 18px;
 }
 
-.li5-box ul li {
-  display: list-item;
+.li5-box li{
+  text-align: left;
+  height: 30px;
+  line-height:  28px;
+  position: relative;
+}
+
+.li5-box li:after{
+  position: absolute;
+    content: '';
+    left: -15px;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    border: 3px solid var(--mainColor);
 }
 
 .li5-box .company-name-container {
