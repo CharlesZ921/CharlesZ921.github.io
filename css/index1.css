@@ -231,6 +231,7 @@ svg {
 .li5-box>div{
   flex: 0 0 100%;
   position: relative;
+  letter-spacing: .05em;
   /* margin-bottom: 10px; */
 }
 .li5-box>div::after{
@@ -271,6 +272,40 @@ svg {
   box-sizing: border-box;
   border: 5px solid var(--mainColor);
   opacity: .5;
+}
+
+.li5-box ul {
+  list-style-type: disc; /* Other options include 'disc', 'square', 'none', etc. */
+  margin-left: 20px;
+}
+
+.li5-box ul li {
+  display: list-item;
+}
+
+.li5-box .company-name-container {
+  display: flex;
+  justify-content: space-between; /* Aligns children to each side of the container */
+  align-items: center; /* Centers items vertically */
+}
+
+.li5-box .icon-and-content {
+  display: flex;  /* Establishes a flex container */
+  align-items: center;  /* Vertically center aligns the children */
+}
+
+.li5-box .icon-image {
+  margin-right: 20px; /* Adds spacing between the icon and the text content */
+  width: 50px;  /* Sets the width of the icon */
+  height: 50px;  /* Sets the height of the icon */
+}
+
+.li5-box .text-box {
+  width: 100%
+}
+
+.li5-box h3 {
+  margin-bottom: 5px;
 }
 
 /* 第六个 */
