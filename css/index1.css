@@ -110,31 +110,6 @@
   font-weight: 500;
 }
 
-/* 第三段 */
-.li3-box {
-  position: relative;
-  min-height: 380px;
-  background-image: url("../img/videoback.jpg");
-  background-size: 100%;
-}
-
-.li3-box>.play-buttom {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  background-color: var(--mainColor);
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-
-}
-
 .play-buttom::after {
   position: absolute;
   content: '';
@@ -339,103 +314,6 @@ svg {
   margin: 5px;
 }
 
-/* 第六个 */
-.content-li.li6 {}
-
-.li6-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.li6-box a{
-  display: block;
-  color: var(--mainColor);
-  margin-top: 10px;
-  cursor: pointer;
-}
-.li6-box>div {
-  display: inline-block;
-  overflow: hidden;
-  flex: 0 0 48%;
-  margin-bottom: 20px;
-}
-
-.li6-box .borderbotm {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.li6car-title {
-  padding: 20px;
-}
-.li6-box .imgbox{
-  display: block;
-  overflow: hidden;
-  margin-top: 0px;
-}
-.li6-box img{
-  transform: scale(1.1);
-  height: 100%;
-  transition: all .3s ease-in-out;
-}
-.li6-box img:hover{
-  transform: scale(1);
-}
-
-
-/* 第七个 */
-.li7-box{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.li7boxitem{
-  flex: 0 0 48%;
-  min-height: 300px;
-  text-align: center;
-  padding: 50px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.li7boxitem.active::after{
-  content: '欢迎聘用';
-  text-align: center;
-  color: #fcfcfe;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 20px;
-  height: 20px;
-  padding: 0 40px;
-  background-color: var(--mainColor);
-  transform: rotate(45deg);
-  position: absolute;
-  top: 23px;
-  right: -40px;
-}
-
-.li7boxitem h3{
-  margin-bottom: 30px;
-}
-.li7boxitem p{
-  margin: 15px 0;
-}
-
-.li7boxitem button{
-  white-space: nowrap;
-  background-color: var(--mainColor);
-  border: solid 2px var(--mainColor);
-  height: 30px;
-  color: var(--headerFont);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border-radius: 20px;
-  padding: 0 30px;
-}
-
 
 .throughline{
   text-decoration: line-through;
@@ -465,13 +343,7 @@ svg {
       .li4-box{
         display: block;
       }
-      .li6-box{
-        display: block;
-      }
       .li5-box{
-        display: block;
-      }
-      .li7-box{
         display: block;
       }
     }
