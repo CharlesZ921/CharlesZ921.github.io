@@ -297,6 +297,17 @@ svg {
     border: 3px solid var(--mainColor);
 }
 
+.li5-box .project-bul-points{
+  margin-left: 35px;
+}
+
+.li5-box .project-bul-points li:after{
+  position: absolute;
+    top: 11px;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
 .li5-box .company-name-container {
   display: flex;
   justify-content: space-between; /* Aligns children to each side of the container */
@@ -324,6 +335,10 @@ svg {
 
 .li5-box .center-text {
   text-align: center; /* Centers text horizontally */
+}
+
+.li5-box .text-box .borderbotm {
+  margin: 5px;
 }
 
 /* 第六个 */
