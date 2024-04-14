@@ -181,7 +181,6 @@
 
 
   font-weight: 500;
-  letter-spacing: .05em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -231,7 +230,6 @@ svg {
 .li5-box>div{
   flex: 0 0 100%;
   position: relative;
-  letter-spacing: .05em;
   /* margin-bottom: 10px; */
 }
 .li5-box>div::after{
