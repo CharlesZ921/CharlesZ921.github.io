@@ -1,21 +1,5 @@
 (function () {
 
-  $('#playbuttom').click(function () {
-    $('#zhezhao').addClass('active')
-    document.getElementById('videoResumeC').play();
-  })
-
-  $('#musicwrap').click(function () {
-    console.log(14563)
-    if ($(this).hasClass('paused')) {
-      $(this).removeClass('paused')
-      $('#play1')[0].play()
-    } else {
-      $(this).addClass('paused')
-      $('#play1')[0].pause()
-    }
-  })
-
 
   // //一段正则，匹配所有_min.的图片src属性
 	// var test = /_min\./

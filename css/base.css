@@ -617,59 +617,6 @@ img {
 } */
 
 
-/* 播放器 */
- .music-wrap{
-  position: fixed;
-  right: -14%;
-  bottom: 30px;
-  z-index: 2;
-  transition: right .3s ease;
-}
-.music-wrap:hover{
-  right: 0%;
-}
-/*
-.music-wrap.paused .music-box{
-  animation-play-state:paused;
-}
-.music-wrap .music-box{
-  animation:fadenum 5s linear infinite;
-}
-.music-wrap .music-box{
-  background-image: url(../img/bg2.jpg);
-  background-size: 100% 100%;
-  transform-origin: center center;
-  width:80px;
-  height:80px;
-  background-color:pink;
-  border-radius: 50%;
-}
-@keyframes fadenum{
-  0%{transform:rotate(0deg);}
-  100%{transform:rotate(360deg);}
-}
-
-.music-wrap .star{
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 10px solid #fff;
-  border-bottom: 10px solid #fff;
-  border-left: 20px solid #fff;
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.music-wrap.paused .star{
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 20px solid #fff;
-} */
-
-
 
  .min_menu{
   display: none;
