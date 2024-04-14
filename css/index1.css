@@ -1,0 +1,359 @@
+ /* 正文 */
+ .content-li.li1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .li1-box::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 8%;
+  right: 8%;
+  height: 10px;
+  background-color: var(--backColor);
+  border-radius: 5px 5px 0% 0%;
+  opacity: .3;
+
+} */
+
+.content-li.li1>.li1-box {
+  position: relative;
+  flex: 0 0 32%;
+  background-color: var(--headerCOlor);
+  min-height: 200px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+}
+
+.li1-box>span {
+  /* margin-top: 25px; */
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--headerFont);
+  line-height: 20px;
+  display: inline-block;
+}
+
+.li1-box>span.tag{
+  color: var(--mainColor);
+  font-size: 18px;
+}
+
+.li1-box>p {
+  /* text-transform: uppercase; */
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--headerFont);
+  transition: .4s ease-in-out;
+  margin: 0px;
+}
+
+/* 公共 */
+.content-li>h3 {
+  display: flex;
+  align-items: center;
+  color: var(--headerFont);
+}
+
+.content-li .borderbotm {
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* 第二块 */
+
+.li2-box {
+  /* width: 100%; */
+  min-height: 50px;
+  padding: 40px;
+  box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
+}
+
+.li2-box blockquote::after {
+  margin: 0;
+  width: 50px;
+  color: var(--mainColor);
+  line-height: 55px;
+  content: '"';
+  position: absolute;
+  bottom: -40px;
+  right: -25px;
+  font-size: 54px;
+}
+
+.li2-box blockquote::before {
+  margin: 0;
+  color: var(--mainColor);
+  width: 50px;
+  line-height: 55px;
+  content: '"';
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  font-size: 54px;
+}
+
+.li2-box blockquote {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: var(--headerFont);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.play-buttom::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background-color: inherit;
+  border-radius: 50%;
+  animation: playbuttom 1s infinite;
+}
+
+@keyframes playbuttom {
+  from {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+.play-buttom svg {
+  vertical-align: -13px;
+}
+
+/* 第四 */
+.li4-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.li4-box>div {
+  box-sizing: border-box;
+  padding: 25px;
+  flex: 0 0 48%;
+  min-height: 250px;
+  margin-bottom: 20px;
+
+
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+.li4-box>div p {
+  font-size: 13px;
+  color: #7B7B7D;
+}
+
+.li4-box>div a {
+  position: relative;
+  display: inline-block;
+  color: var(--mainColor);
+  margin-top: 10px;
+  cursor: pointer;
+  padding-right: 30px;
+}
+.li4-box>div a::after{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-top: 4px solid transparent;
+  border-left: 8px solid var(--mainColor);
+  border-bottom: 4px solid transparent;
+  animation: bmove 1s infinite;
+}
+
+.li4-box svg path{
+  fill: var(--headerFont);
+}
+.li4icon {
+  width: 45px;
+  height: 45px;
+}
+
+svg {
+  vertical-align: sub;
+}
+
+/* 第五个 */
+.li5-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.li5-box>div{
+  flex: 0 0 100%;
+  position: relative;
+  /* margin-bottom: 10px; */
+}
+.li5-box>div::after{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background-color: var(--headerCOlor);
+}
+
+.li5-box .carcontent{
+  min-height: 150px;
+  margin: 0 20px 20px;
+  padding: 30px;
+  box-sizing: content-box;
+  /* width: 80%; */
+  /* background-color: aqua; */
+} 
+.li5-box .li5box-pro{
+  position: relative;
+}
+.li5box-pro:hover .carprogress{
+  opacity: 1;
+}
+.li5-box .carprogress{
+  transition: all .2s ease-in-out;
+  position: absolute;
+  right: -6px;
+  z-index: 1;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--headerCOlor);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid var(--mainColor);
+  opacity: .5;
+}
+
+.li5-box ul {
+  margin-left: 18px;
+}
+
+.li5-box li{
+  text-align: left;
+  height: 25px;
+  line-height:  28px;
+  position: relative;
+  display: list-item;
+}
+
+.li5-box li:after{
+  position: absolute;
+    content: '';
+    left: -15px;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    border: 3px solid var(--mainColor);
+}
+
+.li5-box .project-bul-points{
+  margin-left: 35px;
+}
+
+.li5-box .project-bul-points li{
+  height: 20px;
+}
+
+.li5-box .project-bul-points li:after{
+  position: absolute;
+    top: 11px;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.li5-box .skills{
+  text-align: right;
+}
+
+.li5-box .company-name-container {
+  display: flex;
+  justify-content: space-between; /* Aligns children to each side of the container */
+  align-items: center; /* Centers items vertically */
+  margin-top: 5px;
+}
+
+.li5-box .icon-and-content {
+  display: flex;  /* Establishes a flex container */
+  align-items: center;  /* Vertically center aligns the children */
+}
+
+.li5-box .icon-image {
+  margin-right: 20px; /* Adds spacing between the icon and the text content */
+  width: 50px;  /* Sets the width of the icon */
+  height: 50px;  /* Sets the height of the icon */
+}
+
+.li5-box .text-box {
+  width: 100%
+}
+
+.li5-box h3 {
+  margin-bottom: 5px;
+}
+
+.li5-box .center-text {
+  text-align: center; /* Centers text horizontally */
+}
+
+.li5-box .text-box .borderbotm {
+  margin: 5px;
+}
+
+
+.throughline{
+  text-decoration: line-through;
+  opacity: .5;
+}
+.item-price{
+  font-size: 28px;
+  font-family: fantasy;
+  text-align: center;
+}
+.item-price sub{
+    font-size: 14px;
+    color: rgba(204, 205, 207, 0.7);
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+
+    /* 手机*/
+    @media screen and (max-width: 550px) {
+      .content-li{
+        display: block;
+      }
+       .li1{
+        display: block !important;
+      }
+      .li4-box{
+        display: block;
+      }
+      .li5-box{
+        display: block;
+      }
+    }
