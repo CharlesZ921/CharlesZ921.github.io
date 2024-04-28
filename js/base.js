@@ -127,7 +127,6 @@ $('#minmenu').click(function () {
       timer = opacity&&setInterval(() => {
         opacity-=0.1
         $('.lodding-wrap').css('opacity', opacity);
-        console.log(opacity)
         if (opacity <= 0) {
           $('.lodding-wrap').css('display','none');
           clearInterval(timer)

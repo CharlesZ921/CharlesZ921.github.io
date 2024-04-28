@@ -1,3 +1,5 @@
+import { putNewAccess } from './firestore-operations.js';
+
 (function () {
 
   fetch('./text/about-me.txt')
@@ -28,5 +30,7 @@
       mobileBlock.innerHTML = '<p>Sorry! For now the website does not support mobile access, please visit through a computer.</p>';
       document.body.appendChild(mobileBlock);
   }
+
+  putNewAccess();
 
 })()
