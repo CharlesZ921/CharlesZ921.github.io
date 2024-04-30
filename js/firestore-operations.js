@@ -4,36 +4,42 @@ import { collection, addDoc, Timestamp } from "https://www.gstatic.com/firebasej
 
 export async function putNewAccess() {
 
+  try {
+    // Fetch client's IP address
+    const ipResponse = await fetch('https://api.ipify.org?format=json');
+    const ipData = await ipResponse.json();
+    const ipAddress = ipData.ip;
+
     let location = "unknown place";  // Default location value
+    
+    const isMobileUserAgent = () => {
+      return window.innerWidth < 1600 || navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i);
+    };
+    const isMobile = isMobileUserAgent();
 
     try {
-      // Fetch client's IP address
-      const ipResponse = await fetch('https://api.ipify.org?format=json');
-      const ipData = await ipResponse.json();
-      const ipAddress = ipData.ip;
-  
-      try {
-        // Fetch location data based on IP address
-        const locationResponse = await fetch(`https://ipinfo.io/${ipAddress}/json?token=d9c4c29104bee6`);
-        const locationData = await locationResponse.json();
-        location = locationData.city + ", " + locationData.region + ", " + locationData.country;
-      } catch (error) {
-        // If there's an error fetching location, retain "unknown place"
-        console.error("Error fetching location: ", error);
-      }
-  
-      // Firestore document data
-      const docData = {
-        timestamp: Timestamp.now(),
-        ip: ipAddress,
-        location: location
-      };
-  
-      // Add document to Firestore collection
-      const docRef = await addDoc(collection(db, "accesses"), docData);
-      console.log("Document written with ID: ", docRef.id);
+      // Fetch location data based on IP address
+      const locationResponse = await fetch(`https://ipinfo.io/${ipAddress}/json?token=d9c4c29104bee6`);
+      const locationData = await locationResponse.json();
+      location = locationData.city + ", " + locationData.region + ", " + locationData.country;
     } catch (error) {
-      console.error("Error adding document: ", error);
+      // If there's an error fetching location, retain "unknown place"
+      console.error("Error fetching location: ", error);
     }
+
+    // Firestore document data
+    const docData = {
+      timestamp: Timestamp.now(),
+      ip: ipAddress,
+      isMobile: isMobile,
+      location: location
+    };
+
+    // Add document to Firestore collection
+    const docRef = await addDoc(collection(db, "accesses"), docData);
+    console.log("Document written with ID: ", docRef.id);
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
 
 }

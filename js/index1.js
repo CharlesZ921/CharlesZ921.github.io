@@ -20,7 +20,7 @@ import { putNewAccess } from './firestore-operations.js';
   });
 
   function detectMobileDevice() {
-      return window.innerWidth < 800 || navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i);
+      return window.innerWidth < 1600 || navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i);
   }
 
   function clearBodyAndShowMessage() {
