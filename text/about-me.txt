@@ -1,5 +1,8 @@
 <br><br>Hey! Welcome to my personal website! Right now it's just resume but I'll add more interesting stuff later on.
-<br><br>I'm currently a 4th-year computer engineering student at UBC and I'm currently search for new job.
-In my career, I've had the opportunity to work on a wide range of projects, from developing HPC in distributed computing environments to desktop/web based software applications. I'm always eager to learn new skills and stay up-to-date on the latest industry trends, and I take pride in delivering high-quality work that exceeds expectations.
-<br><br>Outside of work, I enjoy exploring the intersection of technology and society, and I'm passionate about using technology to drive positive change.
+<br><br>I was recently graduated from UBC computer engineering and I'm currently search for new job. 
+In my career, I've had the opportunity to work on a wide range of projects, from developing HPC in distributed computing environments 
+to desktop/web based software applications. I'm always eager to learn new skills and stay up-to-date on the latest industry trends, 
+and I take pride in delivering high-quality work that exceeds expectations.
+<br><br>Outside of work, I enjoy exploring the intersection of technology and society, 
+and I'm passionate about using technology to drive positive change. 
 Thanks for stopping by, and I look forward to connecting with others who share my passion.

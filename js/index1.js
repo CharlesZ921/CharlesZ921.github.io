@@ -27,7 +27,7 @@ import { putNewAccess } from './firestore-operations.js';
       document.body.innerHTML = '';
       const mobileBlock = document.createElement('div');
       mobileBlock.setAttribute('id', 'mobile-block');
-      mobileBlock.innerHTML = '<p>Sorry! For now the website does not support mobile access, please visit through a computer.</p>';
+      mobileBlock.innerHTML = '<p>Sorry! For now the website does not support mobile access, please visit through a computer. Click <a href="./files/Yuanfang_Resume.pdf" target="_blank" style="color: blue;">HERE</a> for quick resume access.</p>';
       document.body.appendChild(mobileBlock);
   }
 
